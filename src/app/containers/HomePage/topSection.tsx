@@ -4,6 +4,7 @@ import tw from "twin.macro";
 import ChevyCarImg from "../../../assets/images/chevy.png"
 import Blob from "../../../assets/images/blob.svg"
 import { SCREENS } from "../../components/responsive";
+import { Button } from "../../components/Buttons";
 
 
 const TopSectionContainer = styled.div`
@@ -125,7 +126,7 @@ position: absolute;
 
 img {
     width: auto;
-    height: 100%;
+    height: 85%;
     max-width: fit-content;
 }
 
@@ -157,6 +158,7 @@ img {
 
 
 
+
 export function TopSection () {
 
 return <TopSectionContainer>
@@ -167,6 +169,8 @@ Best rent-a-car service in Bulgaria</Slogan>
     Choose the right car for your needs and book it 
     easy with our online rent-a-car service with two clicks!
 </Description>
+<Button theme ="filled" text ="Book a car here" />
+<Button theme ="filled" text="Available cars"/>
 </LeftContainer>
 <RightContainer>
 <BlobContainer>
